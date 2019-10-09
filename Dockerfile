@@ -3,6 +3,7 @@ FROM scratch
 ENV ANDROID_DATA     /data
 ENV ANDROID_ROOT     /system
 ENV HOME             /data/data/com.termux/files/home
+ENV LANG             en_US.UTF-8
 ENV PREFIX           /data/data/com.termux/files/usr
 ENV TMPDIR           /data/data/com.termux/files/usr/tmp
 ENV TZ               UTC
