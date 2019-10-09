@@ -1,0 +1,13 @@
+docker_builder:
+  name: Update docker image
+
+  only_if: $CIRRUS_BRANCH == 'x86_64'
+
+  env:
+    DOCKER_USERNAME: xeffyr
+    DOCKER_PASSWORD: ENCRYPTED[c360066047aad83b6a1279ee19f589bba6d7a42123a06fce7a8bf848db1fd3123356d10e6066c6d1bab5374aaf6c8e72]
+
+  script: |
+    docker login --username "$DOCKER_USERNAME" --password "$DOCKER_PASSWORD"
+    docker build -t xeffyr/termux:x86_64 .
+    docker push xeffyr/termux:x86_64
