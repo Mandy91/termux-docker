@@ -112,6 +112,7 @@ point-at-infinity.org
 poppler.freedesktop.org
 potrace.sourceforge.net
 prdownloads.sourceforge.net
+raw.githubusercontent.com
 releases.pagure.org
 rsync.samba.org
 rybczak.net
