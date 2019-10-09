@@ -54,6 +54,7 @@ RUN busybox find /data -type d -exec busybox chmod 755 "{}" \; && \
 # Termux doesn't use these directories, but create them for compatibility
 # when executing stuff like package tests.
 RUN busybox ln -sf /data/data/com.termux/files/usr/bin /bin && \
+    busybox ln -sf /data/data/com.termux/files/usr /usr && \
     busybox mkdir -p -m 1777 /tmp
 
 # Switch to Termux environment.
