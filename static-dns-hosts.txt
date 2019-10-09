@@ -26,6 +26,7 @@ cairographics.org
 calcurse.org
 ccrypt.sourceforge.net
 cgdb.me
+codeload.github.com
 curl.haxx.se
 deb.debian.org
 dev.yorhel.nl
