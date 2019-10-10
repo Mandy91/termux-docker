@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-CONTAINER_NAME="termux-x64"
+CONTAINER_NAME="termux-x86_64"
 DOCKER_IMAGE_NAME="xeffyr/termux:x86_64"
 
 docker start "$CONTAINER_NAME" > /dev/null 2> /dev/null || {
