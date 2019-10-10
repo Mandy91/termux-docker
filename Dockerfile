@@ -68,7 +68,8 @@ ENV PATH /data/data/com.termux/files/usr/bin:/data/data/com.termux/files/usr/bin
 RUN /system/bin/update-static-dns
 
 # Install package updates.
-RUN apt update && apt upgrade -y && \
+RUN apt update && \
+    yes | apt upgrade && \
     rm -f /data/data/com.termux/files/usr/var/log/apt/*
 
 ENTRYPOINT /data/data/com.termux/files/usr/bin/login
