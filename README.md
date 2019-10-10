@@ -7,7 +7,7 @@ not run (Java, OpenSLES, etc...).
 ## How to use
 
 1. Make sure that Docker is installed and running.
-2. `git clone https://github.com/xeffyr/termux-docker && cd ./termux-docker`
+2. `git clone -b x86_64 https://github.com/xeffyr/termux-docker && cd ./termux-docker`
 3. `./run.sh`
 
 You can use the image directly without startup script. For example:
