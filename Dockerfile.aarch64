@@ -14,8 +14,9 @@ ENV PATH /system/bin
 SHELL ["/system/bin/sh", "-c"]
 
 # Bootstrapping Termux environment.
-ADD https://termux.org/bootstrap-i686.zip /data/data/com.termux/files/bootstrap.zip
+ADD https://termux.org/bootstrap-aarch64.zip /data/data/com.termux/files/bootstrap.zip
 COPY system /system
+COPY system.aarch64 /system
 COPY static-dns-hosts.txt /system/etc/static-dns-hosts.txt
 
 WORKDIR /data/data/com.termux/files

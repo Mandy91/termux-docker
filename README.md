@@ -14,3 +14,10 @@ You can use the image directly without startup script. For example:
 ```
 docker run -it xeffyr/termux:latest
 ```
+
+
+
+## Build for other platforms
+```bash
+make build-multiarch
+```
